@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Battery.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e0957b;}
+.s1 { color: #c9c9d1;}
+.s2 { color: #c9c9d1;}
+.s3 { color: #e0957b; font-weight: bold;}
+.s4 { color: #4dacf0;}
+</style>
+</head>
+<body bgcolor="#1d1d26">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Battery.js</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">Battery {</span>
+    <span class="s1">energy</span>
+
+    <span class="s1">constructor(energy) {</span>
+        <span class="s0">this</span><span class="s1">.energy </span><span class="s2">= </span><span class="s1">energy</span><span class="s3">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">setEnergy(energy) {</span>
+        <span class="s0">this</span><span class="s1">.energy </span><span class="s2">= </span><span class="s1">energy</span><span class="s3">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">getEnergy() {</span>
+        <span class="s0">return this</span><span class="s1">.energy</span><span class="s3">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">decreaseEnergy() {</span>
+        <span class="s0">if </span><span class="s1">(</span><span class="s0">this</span><span class="s1">.energy </span><span class="s2">&gt; </span><span class="s4">0</span><span class="s1">) {</span>
+            <span class="s0">this</span><span class="s1">.energy</span><span class="s2">--</span><span class="s3">;</span>
+        <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s0">this</span><span class="s1">.energy </span><span class="s2">= </span><span class="s4">0</span><span class="s3">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s0">let </span><span class="s1">battery </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Battery(</span><span class="s4">100</span><span class="s1">)</span>
+<span class="s0">let </span><span class="s1">battery1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Battery(</span><span class="s4">100</span><span class="s1">)</span></pre>
+</body>
+</html>
